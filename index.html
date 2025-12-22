@@ -1,19 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Tag selectors</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
+    <title>iintoo register page</title>
 </head>
 <body>
-    <form class="login" action="https://habsida.com/">
-        <label for="academy-login">Login</label>
-        <input type="text" id="academy-login" name="academy-login" required>
 
-        <label for="academy-password">Password</label>
-        <input type="password" id="academy-password" name="password">
+    <img class="logo" src="images/logo.svg" alt="">
 
-        <input type="submit" value="Login">
-    </form>  
+    <main>
+        <h1>Get iintoo it today</h1>
+    <h3>There is no charge or obligation upon registration</h3>
+
+    <table>
+        <tr class="social">
+            <td class="fb">
+                <img src="images/facebook.svg" alt="Facebook logo">
+                Register with Facebook
+            </td>
+            <td class="in">
+                <img src="images/linkedin.svg" alt="LinkedIn logo">
+                Register with LinkedIn
+            </td>
+        </tr>
+    </table>
+    
+    <p>or</p>
+    
+    <form>
+
+        <label for="email">
+            <input type="email" id="email" name="email" placeholder="Email">
+        </label>
+
+        <label for="phone">
+            <input type="tel" id="phone" name="phone" placeholder="Phone">
+        </label>
+    </form>
+
+    <h2>What type of investor are you?</h2>
+    <h3>Select the type of investor are. you below.</h3>
+
+    <form action="GET" class="investor_type">
+        
+        <input type="radio" id="individual" name="investor">
+        <label for="individual">Individual</label>
+    
+        <input type="radio" id="business" name="investor">
+        <label for="business">Business</label>
+            
+        <input type="radio" id="ira" name="investor">
+        <label for="ira">IRA</label>
+            
+        <input type="radio" id="trust" name="investor">
+        <label for="trust">Trust</label>
+        
+        <div class="checkbox">
+             <input type="checkbox" id="terms" name="terms">
+            <label for="terms">I agree to the terms and receiving notifications <a href="#">View full terms</a></label>
+      
+        </div>
+
+        <button class="btn">Create Account</button>
+       
+            
+    </form>
+
+
+    </main>
+    
+
+    
 </body>
 </html>

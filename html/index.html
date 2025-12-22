@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
     <title>iintoo register page</title>
 </head>
 <body>
-
-    <img class="logo" src="images/logo.svg" alt="">
-
+<!-- LOGO IMAGE -->
+ <img class="logo_img" src="../images/logo.svg" alt="company logo">
+<!-- HERO SECTION -->
     <main>
         <h1>Get iintoo it today</h1>
     <h3>There is no charge or obligation upon registration</h3>
 
+<!-- FACEBOOK AND LINKEDIN REGISTER BUTTON  -->
     <table>
         <tr class="social">
             <td class="fb">
-                <img src="images/facebook.svg" alt="Facebook logo">
+                <img src="../images/facebook.svg" alt="Facebook logo">
                 Register with Facebook
             </td>
             <td class="in">
-                <img src="images/linkedin.svg" alt="LinkedIn logo">
+                <img src="../images/linkedin.svg" alt="LinkedIn logo">
                 Register with LinkedIn
             </td>
         </tr>
     </table>
     
-    <p>or</p>
+    <span>or</span>
     
+    <!-- REGISTER FORM -->
     <form>
 
         <label for="email">
@@ -40,7 +44,7 @@
 
     <h2>What type of investor are you?</h2>
     <h3>Select the type of investor are. you below.</h3>
-
+<!-- RADIO BUTTONS  - TYPE OF INVESTOR  -->
     <form action="GET" class="investor_type">
         
         <input type="radio" id="individual" name="investor">
@@ -55,6 +59,7 @@
         <input type="radio" id="trust" name="investor">
         <label for="trust">Trust</label>
         
+        <!-- TERMS OF USE -->
         <div class="checkbox">
              <input type="checkbox" id="terms" name="terms">
             <label for="terms">I agree to the terms and receiving notifications <a href="#">View full terms</a></label>

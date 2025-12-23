@@ -12,34 +12,50 @@
 <!-- HERO SECTION -->
     <main>
         <h1>Get iintoo it today</h1>
-    <h3>There is no charge or obligation upon registration</h3>
+        <h3>There is no charge or obligation upon registration</h3>
 
 <!-- FACEBOOK AND LINKEDIN REGISTER BUTTON  -->
-    <table>
-        <tr class="social">
-            <td class="fb">
+
+    <div class="social"></div>
+            <button class="fb">
                 <img src="../images/facebook.svg" alt="Facebook logo">
-                Register with Facebook
-            </td>
-            <td class="in">
+                <span>Register with Facebook</span>
+            </button>
+    
+            <button class="in">
                 <img src="../images/linkedin.svg" alt="LinkedIn logo">
-                Register with LinkedIn
-            </td>
-        </tr>
-    </table>
+                <span>Register with LinkedIn</span>
+            </button>
+      
+
+    </div>
+
     
-    <span>or</span>
-    
+    <!-- OR element -->
+    <div class="or">
+        <hr class="line">
+        <p class="element">OR</p>
+        <hr class="line">
+    </div>
+        
+       
     <!-- REGISTER FORM -->
     <form>
-
-        <label for="email">
-            <input type="email" id="email" name="email" placeholder="Email">
-        </label>
-
-        <label for="phone">
-            <input type="tel" id="phone" name="phone" placeholder="Phone">
-        </label>
+        <div>
+            <div class="email_container">
+            
+                <label for="email">Email<br>
+                    <input type="email" id="email" name="email">
+                </label>
+            </div>
+            
+            <div class="phone_container">
+                <label for="phone">Phone<br>
+                    <input type="tel" id="phone" name="phone">
+                </label>
+            </div>
+        </div>
+                    
     </form>
 
     <h2>What type of investor are you?</h2>

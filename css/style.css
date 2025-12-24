@@ -92,20 +92,21 @@ button {
 /* OR element */
 
 .or {
+  text-align: center;
+  }
+
+.or-line {
+  width: 150px;
+  margin-bottom: 4px;
   display: inline-block;
-  
-}
-.line {
-  border: none;
-  border-top: 1px solid #AFAFAF;
-  margin: 0;
+  border: 1px solid #AFAFAF;
 }
 
-.element {
-  text-align: center;
-  font-size: small;
-  margin-top: 5px;
+.or-text {
+  margin: 0 10px;
+  font-size: 14px;
 }
+
 
 
 

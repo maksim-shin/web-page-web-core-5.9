@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./style.css">
     <title>iintoo register page</title>
 </head>
 <body>
@@ -29,7 +29,7 @@
     </div>
 
     
-    <!-- OR element -->
+<!-- OR element -->
     <div class="or">
         <span class="or-line"></span>
         <span class="or-text">OR</span>
@@ -37,7 +37,7 @@
     </div>
         
        
-    <!-- REGISTER FORM -->
+<!-- REGISTER FORM -->
     <form>
         <div>
             <div class="email_container">
@@ -56,39 +56,49 @@
                     
     </form>
 
+
+    <!-- RADIO BUTTONS  - TYPE OF INVESTOR  -->
+
+
     <h2>What type of investor are you?</h2>
     <h3>Select the type of investor are. you below.</h3>
-<!-- RADIO BUTTONS  - TYPE OF INVESTOR  -->
-    <form action="GET" class="investor_type">
+
+    <div class="investor_type">
+        <form action="GET">
         
-        <input type="radio" id="individual" name="investor">
-        <label for="individual">Individual</label>
+            <input type="radio" id="individual" name="investor">
+            <label for="individual">Individual</label>
+            <span class="info">i</span>
+        
+            <input type="radio" id="business" name="investor">
+            <label for="business">Business</label>
+            <span class="info">i</span>
+                
+            <input type="radio" id="ira" name="investor">
+            <label for="ira">IRA</label>
+            <span class="info">i</span>
+                
+            <input type="radio" id="trust" name="investor">
+            <label for="trust">Trust</label>
+            <span class="info">i</span>
+
+        </form>
+    </div>
     
-        <input type="radio" id="business" name="investor">
-        <label for="business">Business</label>
-            
-        <input type="radio" id="ira" name="investor">
-        <label for="ira">IRA</label>
-            
-        <input type="radio" id="trust" name="investor">
-        <label for="trust">Trust</label>
         
-        <!-- TERMS OF USE -->
-        <div class="checkbox">
-             <input type="checkbox" id="terms" name="terms">
-            <label for="terms">I agree to the terms and receiving notifications <a href="#">View full terms</a></label>
-      
-        </div>
 
-        <button class="btn">Create Account</button>
-       
-            
-    </form>
+<!-- TERMS OF USE -->
 
+    <div class="checkbox">
+
+        <input type="checkbox" id="terms" name="terms">
+        <label for="terms">I agree to the terms and receiving notifications <a href="#">View full terms</a></label>
+
+    </div>
+
+    <button class="btn">Create Account</button>
 
     </main>
-    
 
-    
 </body>
 </html>

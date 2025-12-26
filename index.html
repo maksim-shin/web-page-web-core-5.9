@@ -65,27 +65,51 @@
 
     <div class="investor_type">
         <form action="GET">
-        
-            <input type="radio" id="individual" name="investor">
-            <label for="individual">Individual</label>
-            <span class="info">i</span>
-        
-            <input type="radio" id="business" name="investor">
-            <label for="business">Business</label>
-            <span class="info">i</span>
+
+            <div class="investor_var">
+                <input type="radio" id="individual" name="investor">
+                <label for="individual">Individual</label>
+                <span class="info_container">
+                    <span class="info">i</span>
+                    <span class="info_text">Всплывающая подсказка для Individual</span>
+                </span>
                 
-            <input type="radio" id="ira" name="investor">
-            <label for="ira">IRA</label>
-            <span class="info">i</span>
+            </div>
+         
+            <div class="investor_var">
+                <input type="radio" id="business" name="investor">
+                <label for="business">Business</label>
+                <span class="info_container">
+                    <span class="info">i</span>
+                    <span class="info_text">Всплывающая подсказка для Business</span>
+                </span>
                 
-            <input type="radio" id="trust" name="investor">
-            <label for="trust">Trust</label>
-            <span class="info">i</span>
+            </div>
+
+            <div class="investor_var">
+                <input type="radio" id="ira" name="investor">
+                <label for="ira">IRA</label>
+                <span class="info_container">
+                    <span class="info">i</span>
+                    <span class="info_text">Всплывающая подсказка для IRA</span>
+                </span>
+                
+            </div>
+
+            <div class="investor_var">
+                <input type="radio" id="trust" name="investor">
+                <label for="trust">Trust</label>
+                <span class="info_container">
+                    <span class="info">i</span>
+                    <span class="info_text">Всплывающая подсказка для Trust</span>
+                </span>
+
+            </div>
+                                  
 
         </form>
     </div>
     
-        
 
 <!-- TERMS OF USE -->
 
@@ -96,7 +120,7 @@
 
     </div>
 
-    <button class="btn">Create Account</button>
+    <button type="submit" class="btn">Create Account</button>
 
     </main>
 

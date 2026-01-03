@@ -4,125 +4,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>iintoo register page</title>
+    <title>Register</title>
 </head>
 <body>
-<!-- LOGO IMAGE -->
- <img class="logo_img" src="images/logo.svg" alt="company logo">
-<!-- HERO SECTION -->
-    <main>
-        <h1>Get iintoo it today</h1>
-        <h3>There is no charge or obligation upon registration</h3>
+    <div class="container">
 
-<!-- FACEBOOK AND LINKEDIN REGISTER BUTTON  -->
-
-    <div class="social"></div>
-            <button class="fb">
-                <img src="images/facebook.svg" alt="Facebook logo">
-                <span>Register with Facebook</span>
-            </button>
+            <img class="logo-img" src="images/logo.svg" alt="Company logo">
     
-            <button class="in">
-                <img src="images/linkedin.svg" alt="LinkedIn logo">
-                <span>Register with LinkedIn</span>
-            </button>
-    </div>
 
-    
-<!-- OR element -->
-    <div class="or">
-        <span class="or-line"></span>
-        <span class="or-text">OR</span>
-        <span class="or-line"></span>
-    </div>
-        
-       
-<!-- REGISTER FORM -->
-    <form>
-        <div>
-            <div class="email_container">
-            
-                <label for="email">Email<br>
-                    <input type="email" id="email" name="email">
-                </label>
-            </div>
-            
-            <div class="phone_container">
-                <label for="phone">Phone<br>
-                    <input type="tel" id="phone" name="phone">
-                </label>
-            </div>
-        </div>
+        <div class="register-container">
+
+            <h1>Get iintoo it today</h1>
+            <h3>There is no charge or obligation upon registration</h3>
+
+            <section class="social" >
+                    <div class="social-btn" >
+                        <button class="fb-btn"><span><img class="logo-btn" src="images/facebook.svg" alt="Facebook logo">Register with Facebook</span></button>
+                    </div>
                     
-    </form>
+                    <div class="social-btn">
+                        <button class="in-btn"><span><img class="logo-btn" src="images/linkedin.svg" alt="LimkedIn-logo">Register with LinkedIn</span></button>
+                    </div>
+            </section>
 
-
-    <!-- RADIO BUTTONS  - TYPE OF INVESTOR  -->
-
-
-    <h2>What type of investor are you?</h2>
-    <h3>Select the type of investor are. you below.</h3>
-
-    <div class="investor_type">
-        <form action="GET">
-
-            <div class="investor_var">
-                <input type="radio" id="individual" name="investor">
-                <label for="individual">Individual</label>
-                <span class="info_container">
-                    <span class="info">i</span>
-                    <span class="info_text">Всплывающая подсказка для Individual</span>
-                </span>
-                
+            <!-- OR element -->
+            <div class="or">
+                <span class="or-line"></span>
+                <span class="or-text">OR</span>
+                <span class="or-line"></span>
             </div>
+
+
+            
+
+            <!-- REGISTER FORM -->
+            <form method="post">
+                
+                
+                <div class="email_container">
+                    <label for="email">Email<br>
+                        <input type="email" id="email" name="email">
+                    </label>
+                </div>
+                
+                <div class="phone_container">
+                    <label for="phone">Phone<br>
+                        <input type="tel" id="phone" name="phone">
+                    </label>
+                </div>
+                
+                <div class="investor_type">
+                    <h2>What type of investor are you?</h2>
+                    <p>Select the type of investor you are below.</p>
+
+                <div class="investor_var">
+                    <input type="radio" id="individual" name="investor">
+                    <label for="individual">Individual</label>
+                    <span class="info_container">
+                        <span class="info">i</span>
+                        <span class="info_text">Всплывающая подсказка для Individual</span>
+                    </span>
+                </div>
          
-            <div class="investor_var">
-                <input type="radio" id="business" name="investor">
-                <label for="business">Business</label>
-                <span class="info_container">
-                    <span class="info">i</span>
-                    <span class="info_text">Всплывающая подсказка для Business</span>
-                </span>
-                
-            </div>
+                <div class="investor_var">
+                    <input type="radio" id="business" name="investor">
+                    <label for="business">Business</label>
+                    <span class="info_container">
+                        <span class="info">i</span>
+                        <span class="info_text">Всплывающая подсказка для Business</span>
+                    </span>
+                    
+                </div>
 
-            <div class="investor_var">
-                <input type="radio" id="ira" name="investor">
-                <label for="ira">IRA</label>
-                <span class="info_container">
-                    <span class="info">i</span>
-                    <span class="info_text">Всплывающая подсказка для IRA</span>
-                </span>
-                
-            </div>
+                <div class="investor_var">
+                    <input type="radio" id="ira" name="investor">
+                    <label for="ira">IRA</label>
+                    <span class="info_container">
+                        <span class="info">i</span>
+                        <span class="info_text">Всплывающая подсказка для IRA</span>
+                    </span>
+                    
+                </div>
 
-            <div class="investor_var">
-                <input type="radio" id="trust" name="investor">
-                <label for="trust">Trust</label>
-                <span class="info_container">
-                    <span class="info">i</span>
-                    <span class="info_text">Всплывающая подсказка для Trust</span>
-                </span>
+                <div class="investor_var">
+                    <input type="radio" id="trust" name="investor">
+                    <label for="trust">Trust</label>
+                    <span class="info_container">
+                        <span class="info">i</span>
+                        <span class="info_text">Всплывающая подсказка для Trust</span>
+                    </span>
 
-            </div>
-                                  
+                </div>
 
-        </form>
+                <!-- TERMS OF USE -->
+
+                <div class="checkbox">
+
+                    <input type="checkbox" id="terms" name="terms">
+                    <label for="terms">I agree to the terms and receiving notifications <a href="#">View full terms</a></label>
+
+                </div>
+
+                <button type="submit" class="btn">Create Account</button>
+
+            </form>
+
+        </div>
     </div>
     
-
-<!-- TERMS OF USE -->
-
-    <div class="checkbox">
-
-        <input type="checkbox" id="terms" name="terms">
-        <label for="terms">I agree to the terms and receiving notifications <a href="#">View full terms</a></label>
-
-    </div>
-
-    <button type="submit" class="btn">Create Account</button>
-
-    </main>
-
 </body>
 </html>
+
+        
+       
+
+

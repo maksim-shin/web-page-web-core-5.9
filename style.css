@@ -1,91 +1,137 @@
+/* 
+-----------------COLORS-----------------
+#EFF6FF (фон)
+#2A4A5C (базовый текст)
+#255A9B (кнопка fb)
+#0076B6 (кнопка in)
+#3698FB (кнопка Create Account)
+#7B8A92 (тексты Title - "Get iintoo it today" и "What type of investor are you?")
+#96A5B1 (тексты подзаголовков)
+#AFAFAF (серый текст email, phone, подсказка и т.д)
+#EEEEEE (рамки для input)
+#FFFFFF (белый)
+
+ */
+
+
+/* -----------------GLOBAL STYLE----------------- */
+
+
 @font-face {
-    font-family: 'Barlow';
-    src: url('fonts/Barlow-Regular.eot');
-    src: url('fonts/Barlow-Regular.eot') format('embedded-opentype'),
-        url('fonts/Barlow-Regular.woff2') format('woff2'),
-        url('fonts/Barlow-Regular.woff') format('woff'),
-        url('fonts/Barlow-Regular.ttf') format('truetype'),
-        url('fonts/Barlow-Regular.svg') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Barlow';
+  src: url('fonts/Barlow.oet') format('oet'),
+        url('fonts/Barlow.svg') format('svg'),
+        url('fonts/Barlow.ttf') format('ttf'),
+        url('fonts/Barlow.woff2') format('woff2'),
+        url('fonts/Barlow.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  font-family: 'Barlow', sans-serif;
   background-color: #EFF6FF;
-  background-repeat: no-repeat;
-  background-image: url(images/bg.jpg);
-  background-size: 50%;
-  background-repeat: no-repeat;
-  margin: 0;
-
-   
+  font-family: 'Barlow', sans-serif;
+  font-weight: 400;
 }
 
-main {
- margin-left: 950px;
- margin-right: 30px;
+
+.container {
+  background-image: url(images/bg.jpg);
+  background-repeat: no-repeat;
+  margin:  100px auto;
+  width: 1520px;
+  display: block;
+  background-color: #ffffff;
+}
+
+.logo-img {
+  width: 300px;
+  display: inline-block;
+  padding: 50px 50px 0 50px;
+}
+
+.register-container {
+  width: 640px;
+  height: 800px;
+  display: inline-block;
+  /* border: 2px solid tomato; */
+  margin-left: 820px;
   
 }
 
-h1,
-h2 {
-  margin-top: 20px;
+h1 {
+  font-weight: 700;
+  font-size: 32px;
   color: #7B8A92;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 24px;
+  color: #7B8A92;
+  margin-bottom: 20px;
+
 }
 
 h3 {
+  font-weight: 400;
+  font-size: 20px;
   color: #96A5B1;
+  margin-bottom: 30px;
 }
 
-.logo_img {
-  width: 150px;
-  height: auto;
-  margin-left: 60px;
-  margin-top: 40px;
+p {
+  font-weight: 400;
+  font-size: 16px;
+   color: #96A5B1;
+   margin-bottom: 40px;
 }
 
-/* FACEBOOK AND LINKEDIN REGISTER BUTTON */
+/* -----------------BUTTONs----------------- */
 
-.social {
+
+.social-btn {
   display: inline-block;
+  justify-items: center;
+  margin-bottom: 30px;
+}
+.social-btn button{
+  width: 260px;
+  height: 40px;
+  font-size: 16px;
+  color: #ffffff;
 }
 
-button {
-  width: 250px;
-  height: 44px;
-  padding: 3px;
-  color: white;
-  border: none;
-}
-
-.fb {
-  margin: 30px 30px 20px 0;
-  background-color: #255A9B;
-  }
-
-.in {
-  margin: 30px 0 20px 40px;
-  background-color: #0076B6;
-}
+.fb-btn {
   
-.fb img,
-.in img {
-  width: 20px;
-  height: 20px;
-  margin-right: 20px;
-  margin-left: 0;
-  padding-left: 0;
+  margin-right: 116px;
+  background-color: #255A9B;
+  border: 2px solid  #255A9B;
+  
 }
 
+.in-btn {
+  background-color: #0076B6;
+  border: 2px solid #0076B6;
+}
 
-/* OR element */
+.logo-btn {
+  width: 20px;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
 .or {
-  display: inline-block;
-  margin-left: 120px;
-
-  }
-
+  text-align: center;
+  margin-bottom: 30px;
+}
 .or-line {
   width: 150px;
   margin-bottom: 4px;
@@ -102,7 +148,7 @@ button {
 /* REGISTER FORM */
 .email_container,
 .phone_container {
-  width: 250px;
+  width: 260px;
   height: 60px;
   padding: 3px;
   display: inline-block;
@@ -112,17 +158,17 @@ button {
 }
 
 .email_container {
-  margin: 20px 30px 30px 0;
+  margin: 0 115px 30px 0;
 }
 
 .phone_container {
-  margin: 20px 0 30px 30px;
+  margin: 0 0 30px 0;
 }
 
 input[type=email],
 input[type=tel] {
   width: 192px;
-  height: 40px;
+  height: 35px;
   border: none;
   color: black;
   font-size: 16px;
@@ -130,14 +176,13 @@ input[type=tel] {
 
 input[type=email]:focus,
 input[type=tel]:focus {
-  outline: none; 
+outline: none; 
 }
 
 .email_container:focus-within,
 .phone_container:focus-within {
   border-left: 2px solid #3698FB;
 }
-
 
 /* RADIO BUTTONS  - TYPE OF INVESTOR  */
 .investor_type { 
@@ -205,3 +250,5 @@ input[type=tel]:focus {
   background-color: #3698FB;
   border-radius: 8px;
 }
+
+
